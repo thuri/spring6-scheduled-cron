@@ -6,7 +6,7 @@ This example project should demonstrate the issue or help reproducing this on ot
 
 The project has one Bean containing a method annotated with `@Scheduled(cron="0 */1 * * * *")`. I expect that this method is called each minute when the second is 0. 
 
-This works well for Spring Boot 2.7.6 but since updating to spring-boot 3.0.0 (or 3.0.1) the method may be called some milli- or nanoseconds before second 0 as you can see in the following log snippet:
+This works well for Spring Boot 2.7.6 but since updating to spring-boot 3.0.0 (or 3.0.1) the method may be called some milli- or nanoseconds before second 0 as you can see in the following log snippets (scroll to the right if you can't see the actual output from the application)
 
 ```
   .   ____          _            __ _ _
